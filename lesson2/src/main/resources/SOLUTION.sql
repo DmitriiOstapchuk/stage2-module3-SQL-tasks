@@ -1,0 +1,5 @@
+insert into student (name, birthday, groupnumber) values ('John', '1997-03-17', 1), ('Chris', '1997-04-17', 1), ('Carl', '1997-03-19', 1), ('Oliver', '1996-07-15', 2), ('James', '1996-08-15', 2), ('Lucas', '1996-07-25', 2), ('Henry', '1996-01-25', 2), ('Jacob', '1995-09-15', 3), ('Logan', '1995-07-09', 3), ('Ashton', '1994-07-20', 4), ('Kyle', '1994-04-07', 4), ('Max', '1993-07-15', 5), ('Victor', '1993-07-01', 5);
+insert into subject (name, grade) values ('Art', 1), ('Music', 1), ('Geography', 2), ('History', 2), ('PE', 3), ('Math', 3), ('Science', 4), ('IT', 4), ('Philosophy', 5), ('Politics', 5);
+insert into paymenttype (name) values ('DAILY'), ('WEEKLY'), ('MONTHLY');
+insert into payment (type_id, amount, payment_date, student_id) values (2, 2435, '2023-04-21 07:22:43', 1), (3, 242, '2023-04-21 07:22:43', 4), (2, 2435, '2023-04-21 07:22:43', 7), (1, 24, '2023-04-21 07:22:43', 5), (1, 2435, '2023-04-21 07:22:43', 6);
+insert into mark (student_id, subject_id, mark) values (2, 1, 8), (4, 4, 5), (5, 3, 9), (8, 6, 4), (9, 5, 9), (1, 2, 9);
