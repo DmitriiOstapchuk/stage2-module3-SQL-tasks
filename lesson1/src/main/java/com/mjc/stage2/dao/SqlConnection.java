@@ -26,6 +26,7 @@ public class SqlConnection {
     private static DataSource getDataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)
+                .setName("University")
                 .addScript("./SOLUTION.sql")
                 .build();
     }
