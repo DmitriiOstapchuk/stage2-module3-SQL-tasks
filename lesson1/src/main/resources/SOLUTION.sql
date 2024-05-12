@@ -1,4 +1,4 @@
-CREATE TABLE Student (id BIGINT PRIMARY KEY, name VARCHAR(255), birthday DATE, group INT);
+CREATE TABLE Student (id BIGINT PRIMARY KEY, name VARCHAR(255), birthday DATE, "group" INT);
 CREATE TABLE Subject (id BIGINT PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), grade INT);
 CREATE TABLE PaymentType (id BIGINT PRIMARY KEY, name VARCHAR(255));
 CREATE TABLE Payment (id BIGINT PRIMARY KEY, type_id BIGINT, amount DECIMAL(10,2), student_id BIGINT, payment_date DATETIME, FOREIGN KEY (type_id) REFERENCES PaymentType(id), FOREIGN KEY (student_id) REFERENCES Student(id));
