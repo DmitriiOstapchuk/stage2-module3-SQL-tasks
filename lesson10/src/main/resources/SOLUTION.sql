@@ -1,2 +1,2 @@
 select s.* from subject s join (select subject_id, avg(mark) as avg_mark from mark group by subject_id) as sam on sam.subject_id = s.id where sam.avg_mark > (select AVG(mark) from mark);
-select s.* from student s join (select student_id, avg(amount) as avg_payment from payment group by student_id) as student_avg_payments where student_avg_payments.avg_payment < (select avg(amount) from payment);
+select distinct s.* from student s join (select student_id, avg(amount) as avg_payment from payment group by student_id) as student_avg_payments where student_avg_payments.avg_payment < (select avg(amount) from payment);
